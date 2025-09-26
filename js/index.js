@@ -8,7 +8,7 @@
  let productContainer = []
  let kobri 
 
-  productContainer = JSON.parse(localStorage.getItem('product'))
+  productContainer = JSON.parse(localStorage.getItem('product'))  || []
 
 
     displayProducts()
@@ -123,6 +123,7 @@ function clearInput(){
         }
     }
             document.getElementById('demo').innerHTML  = shanta
+
 
 
 }
