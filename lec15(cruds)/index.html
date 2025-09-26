@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<div class="m-auto my-5 w-75">
+  
+  <label for="ProductName">Product Name</label>
+  <input type="text" class="form-control my-2" id="ProductName">
+  <label for="ProductPrice">Product Price</label>
+  <input type="text" class="form-control my-2" id="ProductPrice">
+  <label for="Category">Category</label>
+  <input type="text" class="form-control my-2" id="Category">
+  <label for="Description">Description</label>
+  <input type="text" class="form-control my-2" id="Description">
+  <div>
+  <button class="btn btn-primary my-3" onclick="addProduct()" id="submitProduct">Submit</button>
+  <button class="btn btn-warning my-3 d-none" onclick="updateProductFinal()" id="updateProduct" >Update</button>
+  </div>
+  <input type="text" class="form-control w-50 m-auto mt-3" placeholder="Search..." id="searchInput" oninput="searchProduct()">
+  
+  
+</div>  
+
+<div class="container">
+  <div class="row my-3" id="demo">
+  
+  </div>
+</div>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
